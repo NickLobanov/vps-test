@@ -1,0 +1,26 @@
+.wrapper {
+    background-color: #fff;
+    border: 1px solid #3DBDF6;
+    border-radius: 13px;
+    display: flex;
+    align-items: center;
+    width: 192px;
+    overflow: hidden;
+}
+
+.text {
+    font-family: 'Proxima Nova SemiBold', Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    line-height: 15px;
+    color: #3DBDF6;
+    margin: 0;
+    padding: 3px 14px;
+    text-align: center;
+    white-space: nowrap;
+}
+.active {
+    background: #3DBDF6;
+    border: 1px solid #3DBDF6;
+    border-radius: 10px;
+    color: #fff
+}

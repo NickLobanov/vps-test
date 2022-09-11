@@ -1,3 +1,24 @@
+@font-face {
+  font-family: 'Proxima Nova Bold';
+  src: url('./fonts/ProximaNova-Bold.woff') format('woff');
+}
+@font-face {
+  font-family: 'Proxima Nova Extra';
+  src: url('./fonts/ProximaNova-Extrabld.woff') format('woff');
+}
+@font-face {
+  font-family: 'Proxima Nova Regular';
+  src: url('./fonts/ProximaNova-Regular.woff') format('woff');
+}
+@font-face {
+  font-family: 'Proxima Nova Light';
+  src: url('./fonts/ProximaNova-Light.woff') format('woff');
+}
+@font-face {
+  font-family: 'Proxima Nova SemiBold';
+  src: url('./fonts/ProximaNova-Semibold.woff') format('woff');
+}
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',

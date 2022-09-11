@@ -1,0 +1,64 @@
+.card {
+    padding: 20px;
+    width: 232px;
+    background-color: #E0F6FC;
+    box-sizing: border-box;
+}
+
+.title {
+    display: flex;
+    align-items: center;
+    font-family: 'Proxima Nova Regular';
+    font-size: 12px;
+    line-height: 15px;
+    color: #000;
+    margin-bottom: 20px;
+}
+.title img {
+    margin-right: 20px;
+}
+.price {
+    font-family: 'Proxima Nova Bold';
+    font-size: 20px;
+    line-height: 24px;
+    color: #000;
+    margin-bottom: 18px;
+}
+
+.text {
+    font-family: 'Proxima Nova Regular';
+    font-size: 12px;
+    line-height: 15px;
+    color: #62686C;
+    margin-bottom: 17px;
+}
+.text span {
+    font-size: 16px;
+    line-height: 19px;
+    color: #000;
+    margin-left: 9px;
+}
+.text:last-of-type {
+    margin-bottom: 20px;
+}
+
+.benefitsWrap {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.benefitsText {
+    font-family: 'Proxima Nova Regular';
+    font-size: 12px;
+    line-height: 15px;
+    color: #000;
+    margin: 0;
+    margin-left: 18px;
+}
+
+@media screen and (max-width: 560px) {
+    .card {
+        width: 100%;
+    }
+}

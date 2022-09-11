@@ -1,0 +1,54 @@
+.container {
+    display: flex;
+}
+
+.main {
+    background-color: #F5F5F5;
+    width: calc(100% - 211px);
+    padding: 0 20px;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    color: #7A8185;
+    font-family: 'Proxima Nova Regular', Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    line-height: 15px;
+    padding: 20px 0;
+}
+
+.headerText {
+    margin: 0;
+    margin-left: 25px;
+    display: flex;
+    align-items: center;
+}
+.headerText:last-of-type {
+    margin-right: 20px;
+}
+.headerImg {
+    margin-right: 10px;
+}
+.headerMenu {
+    display: none;
+}
+
+@media screen and (max-width: 1024px) {
+    .container {
+        overflow-x: hidden;
+    }
+    .main {
+        width: 100%;
+        transition: 0.5s;
+    }
+    .mainActive {
+        transform: translateX(211px);
+        transition: 0.5s;
+    }
+    .headerMenu {
+        display: block;
+        margin-right: auto;
+    }
+}

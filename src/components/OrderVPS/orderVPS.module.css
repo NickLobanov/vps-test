@@ -1,0 +1,40 @@
+.container {
+    background-color: #FFFFFF;
+    box-shadow: 1px 1px 4px #E3E9EC;
+    padding: 20px 20px 30px 20px;
+    min-height: 85vh;
+}
+
+.text {
+    font-size: 12px;
+    line-height: 15px;
+    font-family: 'Proxima Nova Light', Arial, Helvetica, sans-serif;
+    color: #062436;
+    text-transform: uppercase;
+    margin: 0;
+    margin-bottom: 11px;
+}
+
+.title {
+    font-size: 20px;
+    line-height: 24px;
+    font-family: 'Proxima Nova Bold';
+    color: #062436;
+    text-transform: uppercase;
+    margin: 0;
+    padding-bottom: 15px;
+    margin-bottom: 15px;
+    border-bottom: 2px solid #F7FAFB;
+}
+
+.cardWrap {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px
+}
+
+@media screen and (max-width: 1024px) {
+    .cardWrap {
+        justify-content: center;
+    }
+}
