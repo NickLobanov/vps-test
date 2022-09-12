@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useState} from "react";
 import SideMenuStyle from './sideMenu.module.css'
 import Logo from '../../images/logo.svg'
 import BurgerMenu from '../../images/burger-menu.svg'
@@ -18,8 +18,13 @@ import IconIdea from '../../images/icon-idea.svg'
 import Monitoring from '../../images/monitoring.svg'
 import Domain from '../../images/domain.svg'
 import SEO from '../../images/SEO.svg'
+import PropTypes from 'prop-types'
 
 export const SideMenu = ({isMenuOpen, menuClick}) => {
+
+    const [isAccountOpen, setAccountOpen] = useState(true)
+    const [isDomainOpen, setDomainOpen] = useState(false)
+
     return (
         <div className={`${SideMenuStyle.menuContainer} ${isMenuOpen && SideMenuStyle.menuContainerActive}`}>
             <div className={SideMenuStyle.logoWrap}>
@@ -30,8 +35,8 @@ export const SideMenu = ({isMenuOpen, menuClick}) => {
                 <li className={`${SideMenuStyle.menuItem} ${SideMenuStyle.menuItemOrder}`}><img src={OrderVPS} alt='OrderVPS' className={SideMenuStyle.menuImg}/>Заказать VPS</li>
             </ul>
             <ul className={SideMenuStyle.menuList}>
-                <li className={SideMenuStyle.menuItem}><img src={IconAccount} alt='IconAccount' className={SideMenuStyle.menuImg}/>Аккаунт</li>
-                <ul className={SideMenuStyle.menuSidelist}>
+                <li className={SideMenuStyle.menuItem} onClick={() => setAccountOpen(!isAccountOpen)}><img src={IconAccount} alt='IconAccount' className={SideMenuStyle.menuImg}/>Аккаунт</li>
+                <ul className={`${SideMenuStyle.menuSidelist} ${!isAccountOpen && SideMenuStyle.menuSidelistClose}`}>
                     <li className={SideMenuStyle.menuItem}><img src={Profile} alt='Profile' className={SideMenuStyle.menuImg}/>Профиль</li>
                     <li className={SideMenuStyle.menuItem}><img src={Finances} alt='Finances' className={SideMenuStyle.menuImg}/>Финансы</li>
                     <li className={SideMenuStyle.menuItem}><img src={Service} alt='Service' className={SideMenuStyle.menuImg}/>Услуги</li>
@@ -44,8 +49,8 @@ export const SideMenu = ({isMenuOpen, menuClick}) => {
                 <li className={SideMenuStyle.menuItem}><img src={Monitoring} alt='Monitoring' className={SideMenuStyle.menuImg}/>Мониторинг</li>
             </ul>
             <ul className={SideMenuStyle.menuList}>
-                <li className={SideMenuStyle.menuItem}><img src={Domain} alt='Domain' className={SideMenuStyle.menuImg}/>Домены</li>
-                <ul className={SideMenuStyle.menuSidelist}>
+                <li className={SideMenuStyle.menuItem} onClick={() => setDomainOpen(!isDomainOpen)}><img src={Domain} alt='Domain' className={SideMenuStyle.menuImg}/>Домены</li>
+                <ul className={`${SideMenuStyle.menuSidelist} ${!isDomainOpen && SideMenuStyle.menuSidelistClose}`}>
                     <li className={SideMenuStyle.menuItem}><img src={MyDomains} alt='MyDomains' className={SideMenuStyle.menuImg}/>Мои домены</li>
                     <li className={SideMenuStyle.menuItem}><img src={DomainsBonus} alt='DomainsBonus' className={SideMenuStyle.menuImg}/>Доменные бонусы</li>
                     <li className={SideMenuStyle.menuItem}><img src={DomainsPesons} alt='DomainsPesons' className={SideMenuStyle.menuImg}/>Доменные персоны</li>
@@ -68,4 +73,9 @@ export const SideMenu = ({isMenuOpen, menuClick}) => {
             </ul>
         </div>
     )
+}
+
+SideMenu.propTypes = {
+    isMenuOpen: PropTypes.bool,
+    menuClick: PropTypes.func
 }

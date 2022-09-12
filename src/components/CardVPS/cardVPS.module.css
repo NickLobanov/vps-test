@@ -4,6 +4,13 @@
     background-color: #E0F6FC;
     box-sizing: border-box;
 }
+.turbo {
+    background-color: #ECFDF7;
+}
+.hdd {
+    background-color: #C4EBF8;
+}
+
 
 .title {
     display: flex;

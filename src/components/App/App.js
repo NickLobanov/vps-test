@@ -10,15 +10,15 @@ import {getVPSData} from '../../actions'
 
 function App() {
 
-  const [isMenuOpen, setMenuOpen] = useState(false)
-
-  const menuActiveClick = () => setMenuOpen(!isMenuOpen)
-
   const dispatch = useDispatch()
 
   useEffect(() => {
     dispatch(getVPSData())
   }, [dispatch])
+
+  const [isMenuOpen, setMenuOpen] = useState(false)
+
+  const menuActiveClick = () => setMenuOpen(!isMenuOpen)
 
   return (
     <>

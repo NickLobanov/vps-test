@@ -26,6 +26,9 @@
     font-family: 'Proxima Nova Regular', Arial, Helvetica, sans-serif;
     line-height: 26px;
 }
+.menuSidelistClose {
+    display: none;
+}
 
 .menuItem {
     display: flex;
