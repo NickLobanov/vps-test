@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/vps-test/static/css/main.43430fb0.css",
-    "main.js": "/vps-test/static/js/main.1473ce43.js",
+    "main.css": "/vps-test/static/css/main.9b7988a5.css",
+    "main.js": "/vps-test/static/js/main.8c662952.js",
     "static/js/787.4e3e5802.chunk.js": "/vps-test/static/js/787.4e3e5802.chunk.js",
     "static/media/ProximaNova-Light.woff": "/vps-test/static/media/ProximaNova-Light.6f5ad2ca80abea2876d4.woff",
     "static/media/ProximaNova-Regular.woff": "/vps-test/static/media/ProximaNova-Regular.99528640efded3e12591.woff",
@@ -12,6 +12,7 @@
     "static/media/tariff-nvme-1.svg": "/vps-test/static/media/tariff-nvme-1.7070dbbb5385344ff0048221247192ec.svg",
     "static/media/icon-sersev.svg": "/vps-test/static/media/icon-sersev.b91d3466a784d01e038d1b32ff2d4f0a.svg",
     "static/media/Order-VPS.svg": "/vps-test/static/media/Order-VPS.89f4e6ea6a832578450f7dce12cbb334.svg",
+    "static/media/tariff_hdd.svg": "/vps-test/static/media/tariff_hdd.54b2c928c546ed27f44b85b1337ba562.svg",
     "static/media/my-domains.svg": "/vps-test/static/media/my-domains.215ba11d7924a64ceaca963dc3f55c9e.svg",
     "static/media/icon-idea.svg": "/vps-test/static/media/icon-idea.2d12229705cf9c23439a07be760f969e.svg",
     "static/media/icon-shop.svg": "/vps-test/static/media/icon-shop.92886153dd419917c843a3344f766914.svg",
@@ -28,15 +29,16 @@
     "static/media/Domains-bonus.svg": "/vps-test/static/media/Domains-bonus.c39ecc5e6064c67752c25579c96533f1.svg",
     "static/media/monitoring.svg": "/vps-test/static/media/monitoring.87620af65a91f169dc118d9d788e0581.svg",
     "index.html": "/vps-test/index.html",
+    "static/media/tariff_turbo.svg": "/vps-test/static/media/tariff_turbo.f5a34f46d6c50218946a0d4f15da53bd.svg",
     "static/media/icon-plus.svg": "/vps-test/static/media/icon-plus.866aadcfb0d1762ae95abd6d02bf17bd.svg",
     "static/media/burger-menu-black.svg": "/vps-test/static/media/burger-menu-black.3d0aa12aa97c644a19ff58d5bad6f6c0.svg",
     "static/media/burger-menu.svg": "/vps-test/static/media/burger-menu.7ba81ddf369d235b9fd808ebc099d7a9.svg",
-    "main.43430fb0.css.map": "/vps-test/static/css/main.43430fb0.css.map",
-    "main.1473ce43.js.map": "/vps-test/static/js/main.1473ce43.js.map",
+    "main.9b7988a5.css.map": "/vps-test/static/css/main.9b7988a5.css.map",
+    "main.8c662952.js.map": "/vps-test/static/js/main.8c662952.js.map",
     "787.4e3e5802.chunk.js.map": "/vps-test/static/js/787.4e3e5802.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.43430fb0.css",
-    "static/js/main.1473ce43.js"
+    "static/css/main.9b7988a5.css",
+    "static/js/main.8c662952.js"
   ]
 }
